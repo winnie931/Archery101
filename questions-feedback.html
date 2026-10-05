@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Author: Nyaw Win -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="author" content="Nyaw Win">
+<title>Archery 101 | Questions &amp; Feedback</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+<a class="brand" href="index.html">
+<span class="target-icon">
+</span>Archery 101</a>
+<nav aria-label="Main navigation">
+<a href="index.html">Home</a>
+<a href="bows.html">Types of Bows</a>
+<a href="technique-safety.html">Technique &amp; Safety</a>
+<a href="competitive-archery.html">Competitive Archery</a>
+<a class="active" href="questions-feedback.html">Questions &amp; Feedback</a>
+</nav>
+</header>
+<main class="page">
+<section class="feedback-layout">
+<div class="feedback-copy">
+<p class="eyebrow">Questions &amp; feedback</p>
+<h1>Ask freely. Every good archer keeps learning.</h1>
+<p class="intro">Share your question, what you are trying to improve, or what would make Archery 101 clearer. We'll use your message to keep improving this resource.</p>
+<div class="emergency">
+<span>◎</span>
+<span>We welcome beginner questions. For immediate safety, equipment damage, or pain, stop shooting and speak with a qualified instructor or range officer in person.</span>
+</div>
+</div>
+<form class="card form-card" id="feedback-form">
+<h2>Send us a message</h2>
+<p>Share enough context to help us understand your question. Please do not include sensitive personal information.</p>
+<label class="field">Name<input type="text" name="name" placeholder="Your name" required>
+</label>
+<label class="field">Email<input type="email" name="email" placeholder="you@example.com" required>
+</label>
+<label class="field">Message<textarea name="message" placeholder="What would you like to know or improve?" required>
+</textarea>
+</label>
+<button class="submit" type="submit">Submit</button>
+<p class="form-note">By submitting, you agree that we may use your message to respond and improve this educational resource.</p>
+<p class="success-message hidden" id="success-message" role="status">Thanks! Your message has been recorded for this demo.</p>
+</form>
+</section>
+<section class="help-section">
+<h2>Helpful details to include</h2>
+<div class="three-grid">
+<article class="card">
+<h3>Equipment</h3>
+<p>Bow style, draw weight, draw length, and what you have already tried.</p>
+</article>
+<article class="card">
+<h3>Technique</h3>
+<p>Which step feels inconsistent and whether you are working with an instructor.</p>
+</article>
+<article class="card">
+<h3>Competition</h3>
+<p>Country or region, format, division, and the organizer's published information.</p>
+</article>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="footer-top">
+<div>
+<div class="footer-brand">Archery 101</div>
+<p class="footer-copy">Affordable, safety-first guidance for the path from first arrow to first tournament.</p>
+</div>
+<div class="footer-links">
+<div>
+<strong>Learn</strong>
+<a href="bows.html">Types of Bows</a>
+<a href="technique-safety.html">Technique &amp; Safety</a>
+</div>
+<div>
+<strong>Advance</strong>
+<a href="competitive-archery.html">Competitive Archery</a>
+<a href="questions-feedback.html">Questions &amp; Feedback</a>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<span>© Archery 101 · Educational guidance, not a substitute for qualified range instruction.</span>
+<strong>Always follow range commands.</strong>
+</div>
+</footer>
+<script>document.getElementById('feedback-form').addEventListener('submit',function(event){event.preventDefault();document.getElementById('success-message').classList.remove('hidden');this.reset();});</script>
+</body>
+</html>
